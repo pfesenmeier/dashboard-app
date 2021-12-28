@@ -1,6 +1,6 @@
 <script>
     var name = "svelte"
-    var image = "svelte_cap.png"
+    var image = "dashbox.png"
 </script>
 
 <div class="main">
