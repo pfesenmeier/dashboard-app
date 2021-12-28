@@ -1,6 +1,6 @@
 <script>
     var name = "Dashbox"
-    var image = "dashbox.png"
+    var image = "favicon.png"
 </script>
 
 <div class="main">
