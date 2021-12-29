@@ -1,5 +1,5 @@
 <script>
-    var name = "svelte"
+    var name = "Dashbox"
     var image = "dashbox.png"
 </script>
 
