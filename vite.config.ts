@@ -14,7 +14,7 @@ export default defineConfig({
     manifest: {
       name: 'Dashbox',
       short_name: 'Db',
-      description: 'rube-goldberg-esk personal dashboard',
+      description: 'rube-golberg-esk personal dashboard',
       theme_color: '#da532c',
       icons: [
         {
