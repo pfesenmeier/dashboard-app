@@ -4,7 +4,7 @@
 </script>
 
 <div class="main">
-    <img src={image} alt="svelte and capacitor logos"/>
+    <img src={image}/>
     <h1>Welcome to {name}!</h1>
 </div>
 
