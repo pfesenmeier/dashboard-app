@@ -1,11 +1,11 @@
 
 /**
  * @roxi/routify 2.18.4
- * File generated Wed Dec 29 2021 23:44:52 GMT-0500 (Eastern Standard Time)
+ * File generated Thu Dec 30 2021 00:31:43 GMT-0500 (Eastern Standard Time)
  */
 
 export const __version = "2.18.4"
-export const __timestamp = "2021-12-30T04:44:52.445Z"
+export const __timestamp = "2021-12-30T05:31:43.755Z"
 
 //buildRoutes
 import { buildClientTree } from "@roxi/routify/runtime/buildRoutes"
@@ -28,7 +28,9 @@ export const _tree = {
       "component": () => import('../src/pages/index.svelte').then(m => m.default)
     }
   ],
-  "path": "pfesenmeier.github.io/dashboard"
+  "path": "/"
 }
 
+
 export const {tree, routes} = buildClientTree(_tree)
+
