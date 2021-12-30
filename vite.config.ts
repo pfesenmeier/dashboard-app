@@ -10,7 +10,7 @@ const preprocess = require('svelte-preprocess')
 export default defineConfig({
   plugins: [svelte({ preprocess: preprocess() })],
   publicDir: './assets/',
-  base: '/dashbox/',
+  // base: '/dashbox/',
   build: {
     outDir: './public/'
   },
