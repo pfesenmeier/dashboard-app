@@ -1,0 +1,16 @@
+on: push
+name: Build and deploy GH Pages
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build_and_deploy
+      - run: |
+          set -e
+          npm ci
+          npm run build:app
+          cd public
+          git init
+          git add -A
+          git commit -m 'deploy'
+          git push -f git@github.com:pfesenmeier/dashbox.git main:gh-pages
