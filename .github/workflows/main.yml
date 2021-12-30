@@ -1,25 +1,16 @@
-name: website
-
 on: push
-
+name: Build and deploy GH Pages
 jobs:
-  publish:
+  build:
     runs-on: ubuntu-latest
     steps:
-      -
-        name: Checkout
-        uses: actions/checkout@v2
-      -
-        name: Build site
-        run: |
+      - name: build_and_deploy
+      - run: |
+          set -e
           npm ci
           npm run build:app
-      -
-        name: Deploy to GitHub Pages
-        if: success()
-        uses: crazy-max/ghaction-github-pages@v2
-        with:
-          target_branch: gh-pages
-          build_dir: public
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          cd public
+          git init
+          git add -A
+          git commit -m 'deploy'
+          git push -f git@github.com:pfesenmeier/dashbox.git main:gh-pages
