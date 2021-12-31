@@ -1,7 +1,6 @@
 <script>
     var name = "Dashbox";
     var image = "dashbox.png";
-
     import Camera from "@components/Camera.svelte";
     import Drawer from "@components/Drawer.svelte";
     import DrawerButton from "@components/DrawerButton.svelte";
@@ -10,13 +9,14 @@
     let open = false;
 </script>
 
-
-<Drawer bind:open/>
-<DrawerButton bind:open/>
+<Drawer bind:open />
+<DrawerButton bind:open />
 <DeviceInfo />
 <div class="main">
     <img src={image} alt="svelte and capacitor logos" />
     <h1>Welcome to {name}!</h1>
+    <span><a href="/toptens">Favorites</a></span>
+    <spane><a href="/pacers">Pacers</a></spane>
     <Camera />
 </div>
 
